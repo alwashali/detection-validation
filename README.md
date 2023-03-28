@@ -46,7 +46,7 @@ GLOBAL OPTIONS:
 **explorer.exe making DNS request** 
 
 ```
-mcli.exe dnsquery --binpath c:\temp\explorer.exe --host [malicious.com](http://malicious.com/)
+mcli.exe dnsquery --binpath c:\temp\explorer.exe --host http://malicious.com
 ```
 
 **w.exe creating file from path C:\temp**  
