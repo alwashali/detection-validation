@@ -54,3 +54,8 @@ mcli.exe dnsquery --binpath c:\temp\explorer.exe --host http://malicious.com
 ```
 mcli.exe createfile --path f.dat --binpath c:\temp\w.exe
 ```
+
+## To Do 
+- Registry events 
+- Module events 
+ 
