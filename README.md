@@ -16,7 +16,7 @@ NAME:
    Malware Cli - A new cli application
 
 USAGE:
-   main.exe [global options] command [command options] [arguments...]
+   mcli.exe [global options] command [command options] [arguments...]
 
 DESCRIPTION:
    Detection validation tool.
@@ -26,6 +26,7 @@ DESCRIPTION:
 COMMANDS:
    argsfree    Accept any commandline
    connect     Connect to host
+   download    Download file
    dnsquery    Resolve DNS
    execute     Execute command with custom commandline and parent process
    createfile  Create file at a spcific path
