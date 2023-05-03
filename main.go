@@ -117,6 +117,26 @@ func main() {
 				ExecuteCommand(c.String("command"), c.String("arg"), c.String("parent"), c.String("copy"))
 
 			},
+		}, {
+			Name:  "encrypt",
+			Usage: "encrypt all files in a folder that match a pattern",
+			Flags: []cli.Flag{
+
+				&cli.StringFlag{
+					Name:     "path",
+					Usage:    "Folder path",
+					Required: true,
+				},
+				&cli.StringFlag{
+					Name:  "pattern",
+					Usage: "File name pattern",
+				},
+			},
+			Action: func(c *cli.Context) {
+
+				EncryptFiles(c.String("path"), c.String("pattern"))
+
+			},
 		},
 		{
 			Name: "createfile",
@@ -136,6 +156,40 @@ func main() {
 			Action: func(c *cli.Context) {
 
 				filewrite(c.String("path"), c.String("binpath"))
+
+			},
+		},
+		{
+			Name: "reg",
+
+			Usage: "Add registry key",
+			Flags: []cli.Flag{
+				&cli.StringFlag{
+					Name:     "keyname",
+					Usage:    "Key name",
+					Required: true,
+				},
+				&cli.StringFlag{
+					Name:     "keypath",
+					Usage:    "Key path",
+					Required: true,
+				},
+				&cli.StringFlag{
+					Name:  "value",
+					Usage: "Key value",
+				},
+				&cli.StringFlag{
+					Name:  "binpath",
+					Usage: "Full path of the binary creating the file. Example: C:/temp/binary.exe",
+				},
+				&cli.BoolFlag{
+					Name:  "delete",
+					Usage: "Delete key",
+				},
+			},
+			Action: func(c *cli.Context) {
+
+				AddRegistryKey(c.String("keypath"), c.String("keyname"), c.String("value"), c.String("binpath"), c.Bool("delete"))
 
 			},
 		},
