@@ -16,7 +16,7 @@ NAME:
    Malware Cli - A new cli application
 
 USAGE:
-   mcli.exe [global options] command [command options] [arguments...]
+   main.exe [global options] command [command options] [arguments...]
 
 DESCRIPTION:
    Detection validation tool.
@@ -29,7 +29,9 @@ COMMANDS:
    download    Download file
    dnsquery    Resolve DNS
    execute     Execute command with custom commandline and parent process
+   encrypt     encrypt all files in a folder that match a pattern
    createfile  Create file at a spcific path
+   reg         Add registry key
    help, h     Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
@@ -56,7 +58,4 @@ mcli.exe dnsquery --binpath c:\temp\explorer.exe --host http://malicious.com
 mcli.exe createfile --path f.dat --binpath c:\temp\w.exe
 ```
 
-## To Do 
-- Registry events 
-- Module events 
  
