@@ -2,14 +2,14 @@
 
 ## Purpose
 
-The tool automate the process of simulating malicious process events without need to go through setup of real processes. 
+The tool automates the process of simulating malicious process events without need to go through setup of real processes. 
 
-Suppose you want to test w3wp.exe spawning Powershell, you will need to go through exchange setup to simulate w3wp.exe spawning Powershell, since detection engines work based simple string matching from telemetry collection tools such as Sysmon. 
-Any binary with the same name and path can be used to test the logic, hence no need to setup real exchange to simulate the behavior.
+Suppose you want to test w3wp.exe spawning Powershell, you will need to go through iis setup to simulate w3wp.exe spawning Powershell, since detection engines work based simple string matching from telemetry collection tools such as Sysmon. 
+Any binary with the same name and path can be used to test the logic, hence no need to setup real iis to simulate the behavior.
 
 ![w3wp_powershell.png](img/w3wp_powershell.png)
 
-The tool allow you to create a child process with a custom parent and path. In addition to couple of other events such as file create from specific process and path, DNS query, Process connections. 
+The tool allow you to create a child process with a custom parent and path. In addition to couple of other events such as file create from specific process and path, DNS query, registry, and Process connections. 
 
 ```
 NAME:
