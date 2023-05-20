@@ -46,10 +46,10 @@ GLOBAL OPTIONS:
  mcli.exe execute --parent winword.exe --command cscript.exe
 ```
 
-**explorer.exe making DNS request** 
+**rundll32.exe making DNS request** 
 
 ```
-mcli.exe dnsquery --binpath c:\temp\explorer.exe --host malicious.com
+mcli.exe dnsquery --binpath c:\temp\rundll32.exe --host malicious.com
 ```
 
 **w.exe creating file from path C:\temp**  
