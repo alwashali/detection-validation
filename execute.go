@@ -9,7 +9,7 @@ import (
 	"os/exec"
 	"strings"
 )
-
+ 
 func copyBinaryTo(toPath string, binaryName string) string {
 
 	//get path of current running process
