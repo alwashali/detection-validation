@@ -4,7 +4,7 @@
 
 The tool automates the process of simulating malicious process events without need to go through setup of real processes. 
 
-Suppose you want to test w3wp.exe spawning Powershell, you will need to go through iis setup to simulate w3wp.exe to simulate the events, which is a consuming task if you have many rules to validate. Since detection engines work based simple string matching from telemetry collection tools such as Sysmon or EDR, any binary with the same parent process name, child process name, commandline and path can be used to test the logic, hence no need to setup iis to simulate the behavior. 
+Suppose you want to test w3wp.exe spawning Powershell, you will need to go through iis setup to simulate w3wp.exe events, which is a consuming task if you have many rules to validate. Since detection engines work based simple string matching from telemetry collection tools such as Sysmon or EDR, any binary with the same parent process name, child process name, commandline and path can be used to test the logic, hence no need to setup iis to simulate the behavior. 
 
 ![w3wp_powershell.png](img/w3wp_powershell.png)
 
