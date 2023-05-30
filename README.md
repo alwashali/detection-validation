@@ -61,15 +61,15 @@ mcli.exe createfile --path f.dat --binpath c:\temp\w.exe
 
 ### Linux
 **Run app to download prerequisites and check execution**
-```
+```bash
 go run .
 ```
 **Compile app**
-```
+```bash
 go build .
 ```
 
-### Windows
+### Windows (Powershell)
 **Go to the folder that contains Detection-Validation project files**
 ```powershell
 cd C:\tools\Detection-Validation
