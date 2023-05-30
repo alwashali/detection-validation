@@ -70,7 +70,7 @@ go build .
 ```
 
 ### Windows
-**Go to the folder that contains Detection-Validation project files
+**Go to the folder that contains Detection-Validation project files**
 ```powershell
 cd C:\tools\Detection-Validation
 ```
