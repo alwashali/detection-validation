@@ -57,4 +57,28 @@ mcli.exe dnsquery --binpath c:\temp\rundll32.exe --host malicious.com
 mcli.exe createfile --path f.dat --binpath c:\temp\w.exe
 ```
 
- 
+## Installation
+
+### Linux
+**Run app to download prerequisites and check execution**
+```bash
+go run .
+```
+**Compile app**
+```bash
+go build .
+```
+
+### Windows (Powershell)
+**Go to the folder that contains Detection-Validation project files**
+```powershell
+cd C:\tools\Detection-Validation
+```
+**Run app to download prerequisites and check execution**
+```powershell
+& "C:\Program Files\Go\bin\go.exe" run .
+```
+**Compile app**
+```powershell
+& "C:\Program Files\Go\bin\go.exe" build .
+```
