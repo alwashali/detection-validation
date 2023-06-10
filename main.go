@@ -67,7 +67,7 @@ func main() {
 			},
 			Action: func(c *cli.Context) {
 
-				downloadFile(c.String("URL"))
+				downloadFile(c.String("url"))
 
 			},
 		},
