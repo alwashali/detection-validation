@@ -28,11 +28,14 @@ func filewrite(fpath string, binPath string) {
 		if err := os.MkdirAll(dir, 0755); err != nil {
 			log.Println(err)
 		}
-		_, err := os.Create(fpath)
+
+		file_handle, err := os.Create(fpath)
+		file_handle.WriteString("Test file\ncreated by https://github.com/alwashali/Detection-Validation")
+
 		if err != nil {
 			log.Println(err)
-
 		}
+		file_handle.Close()
 
 	}
 }
