@@ -68,5 +68,5 @@ go run .
 ```
 **Compile app**
 ```powershell
-go build . 
+go build -o mcli.exe .
 ```
